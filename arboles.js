@@ -114,17 +114,19 @@ class Arbol{
 
 }
 
-const BST = new Arbol();
+const prodc = new Arbol();
 
 
-BST.insert(15, "control", 3, 800);
-BST.insert(25, "tarjeta-video", 5, 20000);
-BST.insert(10, "ram", 4, 800);
-BST.insert(7, "teclado", 5, 500);
-BST.insert(22, "mouse", 8, 300);
-BST.insert(17, "gabinete", 12, 2000);
-BST.insert(13, "procesador", 4, 2500);
-BST.insert(5, "ventilador", 6, 1400);
+prodc.insert(15, "control", 3, 800);
+prodc.insert(25, "tarjeta-video", 5, 20000);
+prodc.insert(10, "ram", 4, 800);
+prodc.insert(7, "teclado", 5, 500);
+prodc.insert(22, "mouse", 8, 300);
+prodc.insert(17, "gabinete", 12, 2000);
+prodc.insert(13, "procesador", 4, 2500);
+prodc.insert(5, "ventilador", 6, 1400);
 
-const root = BST.getrootnode();
-BST.postorder(root);
+const root = prodc.getrootnode();
+prodc.preorder(root);
+prodc.inorder(root);
+prodc.postorder(root);
